@@ -1,0 +1,239 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*End CSS Reset*/
+
+@font-face 
+{
+font-family: "PT-F5 Regular";
+src: url("fonts/PT-F5-Regular.ttf");
+src: url("fonts/PT-F5-Regular.woff") format("woff"),
+url("fonts/PT-F5-Regular.otf") format("opentype");
+}
+
+@font-face 
+{
+font-family: "Nomad1Regular";
+src: url("fonts/Nomad1Regular.ttf");
+}
+
+@font-face 
+{
+font-family: "Nomad1Mono";
+src: url("fonts/Nomad1Mono.ttf");
+}
+
+@font-face 
+{
+font-family: "Nomad2Regular";
+src: url("fonts/Nomad2Regular.ttf");
+}
+
+@font-face 
+{
+font-family: "Nomad2Mono";
+src: url("fonts/Nomad2Mono.ttf");
+}
+
+
+:root {
+    --color-primary: black;
+    --color-secondary: white;
+    --color-tertiary: rgb(136, 162, 196);
+    --color-background: #d1dbdf;
+  /*  --font: "PT-F5 Regular", "Helvetica Neue Medium", Helvetica, Arial, sans-serif; */
+    --font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --max-width: 960px;
+    --body-size: 16px;
+    --line-height-multiplier: 1.2;
+    /* site title */
+    --h1-size: calc(var(--body-size)*7);
+    --h2-size: calc(var(--body-size)*1.75);
+    --h3-size: calc(var(--body-size)*1);
+    --spacing: calc(var(--body-size)*3);
+    --border-width: 1px;
+    --letter-spacing: .03em;
+}
+
+/*main css*/
+
+/*text*/
+
+html {
+    background-color: var(--color-secondary);
+}
+
+html, body, p, a, h1, h2, h3, ul, li {
+    font-family: var(--font);
+    color: var(--color-primary);
+    margin-bottom: calc(var(--body-size)*1);
+    text-decoration: none;
+    letter-spacing: var(--letter-spacing);
+    font-weight: 300d;
+}
+
+a, a:hover, a:active, a.active {
+    padding-bottom: calc(var(--spacing)*0.04);
+    border-bottom: solid var(--border-width);
+    display: inline;
+}
+
+body {
+    font-size: var(--body-size);
+    line-height: calc(var(--body-size)*var(--line-height-multiplier));
+}
+
+h1 {
+    font-family: "Nomad1Regular";
+    font-size: var(--h1-size);
+    line-height: calc(var(--h1-size)*var(--line-height-multiplier));
+    /*text-transform: uppercase;*/
+    letter-spacing: 0;
+}
+
+h2 {
+    font-size: var(--h2-size);
+    line-height: calc(var(--h2-size)*var(--line-height-multiplier));
+}
+
+h3 {
+    font-size: var(--h3-size);
+    line-height: calc(var(--h3-size)*var(--line-height-multiplier));
+}
+/*
+h1, h3 {
+    color: var(--color-tertiary);
+}
+*/
+/*text*/
+
+/* images and video */
+img, video {
+    margin-bottom: calc(var(--spacing)*.5);
+}
+
+#logo {
+    height: var(--h1-size);  
+        image-rendering: pixelated;
+        image-rendering: -moz-crisp-edges;
+        image-rendering: crisp-edges;
+}
+/* images and video */
+
+
+/*divs*/
+
+#site-container {
+    max-width: var(--max-width);
+    margin: auto;
+    margin-top: calc(var(--spacing)*2);
+    padding-left: var(--spacing);
+    padding-right: var(--spacing);
+}
+
+#section-header {
+    border-bottom: var(--border-width) solid var(--color-primary);
+    margin-bottom: calc(var(--spacing)/2);
+}
+
+video {
+    width: 100%;
+}
+
+.container 
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box {
+    background-color: var(--color-secondary);
+    margin-bottom: var(--spacing);
+}
+
+.left-minor, .left-major, .right-minor, .right-major, .center-content, .border {
+    display: block;
+    margin-bottom: calc(var(--spacing)*1);
+}
+
+.left-major, .right-major {
+    width: calc(75% - (var(--spacing)/2));
+}
+
+.left-minor, .right-minor {
+    width: calc(25% - (var(--spacing)/2));
+}
+
+/*divs*/
+
+
+/*
+@media (prefers-color-scheme: dark) {
+    :root {
+	--color-primary: white;
+    --color-secondary: black; 
+    --color-tertiary: yellow;
+    }
+}
+*/
+ /*screen size*/
+
+@media screen and (max-width: 750px) {
+    .left-major, .left-minor, .right-major, .right-minor {
+        width: calc(100%);
+    }
+    :root {
+        --body-size: 14px;
+        --h1-size: calc(var(--body-size)*4)
+        }
+    
+}
