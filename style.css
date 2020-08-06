@@ -157,6 +157,7 @@ h1, h3 {
 /* images and video */
 img, video {
     margin-bottom: calc(var(--spacing)*.5);
+    width: 100%;
 }
 
 #logo {
@@ -181,10 +182,6 @@ img, video {
 #section-header {
     border-bottom: var(--border-width) solid var(--color-primary);
     margin-bottom: calc(var(--spacing)/2);
-}
-
-video {
-    width: 100%;
 }
 
 .container 
