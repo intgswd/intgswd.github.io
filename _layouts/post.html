@@ -32,9 +32,10 @@
             <div id="post-container" class="left-major">
                 <div class="box">
                     <div id="section-header">
-                        <h3>{{ page:date }}</h3>
+                        <h3>{{ page.date | date: "%-m/%-d/%Y" }}</h3>
                     </div>
-                    <h2>Post title</h2>
+                    <h2>{{ page.title }}</h2>
+                    {{page.content}}
                     <p>Here's a short description of what's going on</p>
                     <video src="images/video-example-1.mov" autoplay loop muted></video>
                     <p>Here's a short description of what's going on. Here's a short description of what's going on.
@@ -70,4 +71,5 @@
     </div>
 
 </body>
+
 </html>
