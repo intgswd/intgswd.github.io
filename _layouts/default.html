@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--SITE META-->
+    <!--If the current page doesn't have a title, the file name is used-->
+    <title>I Need To Get Some Work Done</title>
+    <meta title=”description” content="The official dev blog for I Need To Get Some Work Done">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="site-container">
+        <div id="nav-container" class="container">
+            <div id="title-container" class="left-major">
+                <img id="logo" src="images/intgswd-logo-type.png"></img>
+                <!--<h1>intgswd</h1>-->
+            </div>
+            <div id="description-container" class="right-minor">
+                <p>A project by Pedestrian Tactics</p>
+                <ul>
+                    <li><a>Website</a></li>
+                    <li><a>Twitter</a></li>
+                    <li><a>Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="content-container" class="container">
+            <div id="post-container" class="left-major">
+                <div class="box">
+                    <div id="section-header">
+                        <h3>10/23/2020</h3>
+                    </div>
+                    <h2>Post title</h2>
+                    <p>Here's a short description of what's going on</p>
+                    <video src="images/video-example-1.mov" autoplay loop muted></video>
+                    <p>Here's a short description of what's going on. Here's a short description of what's going on.
+                        Here's a short description of what's going on. Here's a short description of what's going on.
+                    </p>
+                </div>
+            </div>
+            <div id="archive-container" class="right-minor">
+                <div class="box">
+                    <div id="section-header">
+                        <h3>Archive</h3>
+                    </div>
+                    <ul>
+
+                        {% for post in site.intgswd.posts %}
+                        <li>
+                            <a class="post-link" href="{{ post.url }}">
+                                {{ post.date | date: "%-m/%-d/%Y" }}
+                            </a>
+                        </li>
+                        {% endfor %}
+
+                        <li><a>10/23/2020</a></li>
+                        <li><a>9/16/2020</a></li>
+                        <li><a>8/21/2020</a></li>
+                    </ul>
+
+                </div>
+                <div class="box">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
