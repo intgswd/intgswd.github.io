@@ -165,6 +165,8 @@ img, video {
         image-rendering: pixelated;
         image-rendering: -moz-crisp-edges;
         image-rendering: crisp-edges;
+        /*to prevent it from scaling like img and video */
+    width: auto;
 }
 /* images and video */
 
