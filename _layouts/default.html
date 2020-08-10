@@ -10,26 +10,21 @@
     <title>I Need To Get Some Work Done</title>
     <meta title=”description” content="The official dev blog for I Need To Get Some Work Done">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
     <div id="site-container">
+
         <div id="nav-container" class="container">
-            <div id="title-container" class="left-major">
+            <div id="title" class="left-major">
                 <img id="logo" src="images/intgswd-logo-type.png"></img>
                 <!--<h1>intgswd</h1>-->
             </div>
-            <div id="description-container" class="right-minor">
-                <p>A project by Pedestrian Tactics</p>
-                <ul>
-                    <li><a>Website</a></li>
-                    <li><a>Twitter</a></li>
-                    <li><a>Instagram</a></li>
-                </ul>
-            </div>
         </div>
+
         <div id="content-container" class="container">
-            <div id="post-container" class="left-major">
+            <div id="post" class="left-major">
                 <div class="box">
                     <div id="section-header">
                         <h3>{{ page.date | date: "%-m/%-d/%Y" }}</h3>
@@ -39,7 +34,8 @@
                     </p>
                 </div>
             </div>
-            <div id="archive-container" class="right-minor">
+
+            <div id="archive" class="right-minor">
                 <div class="box">
                     <div id="section-header">
                         <h3>Archive</h3>
@@ -60,7 +56,27 @@
                     </ul>
 
                 </div>
+            </div>
+        </div>
+
+        <div id="footer-container">
+            <div id="description" class="left-major">
                 <div class="box">
+                    <div id="section-header">
+                    </div>
+                    <ul>
+                        <li>
+                            A project by Pedestrian Tactics
+                        </li>
+                        <li>
+                            <ul>
+                                <li><a href="https://pedestriantactics.com">Website</a></li>
+                                <li><a href="https://twitter.com/pedestriantac">Twitter</a></li>
+                                <li><a href="https://www.instagram.com/pedestriantactics">Instagram</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
                 </div>
             </div>
         </div>
