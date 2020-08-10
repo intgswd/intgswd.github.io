@@ -1,5 +1,5 @@
-{% assign first_post_url = site.posts.first.url %}
+---
+layout: none
+---
 
----
-redirect_to: {{first_post_url}}
----
+{{ site.posts.first }}
