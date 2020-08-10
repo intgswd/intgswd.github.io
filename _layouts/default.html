@@ -48,6 +48,7 @@
                             {% assign page_identifier = page.date + page.slug %}
                             <a class="post-link" href="{{ post.url }}" class="{% if post_identifier == page_identifier %}active{% endif %}">
                                 {{ post.date | date: "%-m/%-d/%Y" }} {{ post.title }}
+                                <br />
                                 {{ post_identifier }}
                             </a>
                         </li>
