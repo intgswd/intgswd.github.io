@@ -94,7 +94,7 @@ src: url("fonts/Nomad2Mono.ttf");
     --body-size: 16px;
     --line-height-multiplier: 1.2;
     /* site title */
-    --h1-size: calc(var(--body-size)*8);
+    --h1-size: calc(var(--body-size)*7);
     --h2-size: calc(var(--body-size)*2);
     --h3-size: calc(var(--body-size)*1);
     --spacing: calc(var(--body-size)*3);
@@ -250,7 +250,7 @@ img, video {
     :root {
 	--color-primary: white;
     --color-secondary: black; 
-    --color-tertiary: yellow;
+    --color-tertiary: #ff2a2b;
     }
 }
 */
