@@ -115,7 +115,7 @@ html, body, p, a, h1, h2, h3, ul, li {
     margin-bottom: calc(var(--body-size)*1);
     text-decoration: none;
     letter-spacing: var(--letter-spacing);
-    font-weight: 300d;
+    font-weight: 300;
 }
 
 a {
@@ -125,8 +125,7 @@ a {
 }
 
 a:hover, a:active, a.active {
-    color: var(--color-tertiary);
-    border-bottom: solid var(--border-width) var(--color-tertiary);
+    border-bottom: none;
 }
 
 body {
