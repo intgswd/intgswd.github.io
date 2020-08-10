@@ -177,15 +177,13 @@ img, video {
 
 #logo {
     position: relative;
-}
-
-#logo img {
-    height: var(--h1-size);  
-        image-rendering: pixelated;
-        image-rendering: -moz-crisp-edges;
-        image-rendering: crisp-edges;
-        /*to prevent it from scaling like img and video */
-    width: auto;
+    height: var(--h1-size);
+    background-image: url("images/intgswd-logo-type.png");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
 }
 
 #logo-overlay {
@@ -198,6 +196,7 @@ img, video {
     overflow:hidden;
     mix-blend-mode: screen;
 }
+
 /* images and video */
 
 
