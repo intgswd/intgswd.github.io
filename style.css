@@ -118,13 +118,13 @@ html, body, p, a, h1, h2, h3, ul, li {
     font-weight: 300d;
 }
 
-a, a:hover, a:active, a.active {
+a {
     padding-bottom: calc(var(--spacing)*0.04);
     border-bottom: solid var(--border-width);
     display: inline;
 }
 
-a:active, a.active {
+a:hover, a:active, a.active {
     color: var(--color-tertiary);
     border-bottom: solid var(--border-width) var(--color-tertiary);
 }
