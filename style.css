@@ -124,8 +124,8 @@ a, a:hover, a:active, a.active {
     display: inline;
 }
 
-a:active {
-    border-bottom: none;
+a:active, a.active {
+    border-bottom: solid var(--border-width) var(--color-tertiary);
 }
 
 body {
