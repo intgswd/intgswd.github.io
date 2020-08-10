@@ -1,4 +1,4 @@
-permalink: /:slug
+permalink: /:year:month:day:slug
 
 plugins:
   - jekyll-redirect-from
