@@ -18,14 +18,16 @@
 
         <div id="nav-container" class="container">
             <div id="title" class="left-major">
-                <!--<img id="logo" src="images/intgswd-logo-type.png"></img>-->
-                <h1>I need to get some work done</h1>
+                <a href="/">
+                    <!--<img id="logo" src="images/intgswd-logo-type.png"></img>-->
+                    <h1>I need to get some work done</h1>
+                </a>
             </div>
         </div>
 
         <div id="content-container" class="container">
 
-            <div id="post" class="left-major">
+            <div id="page" class="left-major">
                 <div class="box">
                     <div id="section-header">
                         <h3>{{ page.date | date: "%-m/%-d/%Y" }}</h3>
@@ -46,7 +48,8 @@
                         <li>
                             {% assign post_identifier = post.date | append: post.slug %}
                             {% assign page_identifier = page.date | append: page.slug %}
-                            <a href="{% if post_identifier == page_identifier %}{{ post.url }}{% endif %}" class="{% if post_identifier == page_identifier %}active{% endif %}">
+                            <a href="{% if post_identifier == page_identifier %}{{ post.url }}{% endif %}"
+                                class="{% if post_identifier == page_identifier %}active{% endif %}">
                                 {{ post.date | date: "%-m/%-d/%Y" }} {{ post.title }}
                             </a>
                         </li>

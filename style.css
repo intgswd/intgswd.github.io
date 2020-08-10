@@ -118,13 +118,13 @@ html, body, p, a, h1, h2, h3, ul, li {
     font-weight: 300;
 }
 
-a {
-    padding-bottom: calc(var(--spacing)*0.04);
+#archive a, #page a {
+    padding-bottom: calc(var(--spacing)*0.06);
     border-bottom: solid var(--border-width);
     display: inline;
 }
 
-a:hover, a:active, a.active {
+#archive a:active, #archive a.active {
     border-bottom: none;
 }
 
