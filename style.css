@@ -124,6 +124,10 @@ a, a:hover, a:active, a.active {
     display: inline;
 }
 
+a:active {
+    border-bottom: none;
+}
+
 body {
     font-size: var(--body-size);
     line-height: calc(var(--body-size)*var(--line-height-multiplier));
