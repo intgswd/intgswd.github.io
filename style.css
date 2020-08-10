@@ -125,6 +125,7 @@ a, a:hover, a:active, a.active {
 }
 
 a:active, a.active {
+    color: var(--color-tertiary);
     border-bottom: solid var(--border-width) var(--color-tertiary);
 }
 
@@ -157,6 +158,12 @@ h3 {
 }
 /*text*/
 
+/*text color*/
+h1, .border, h3 {
+    color: var(--color-tertiary);
+}
+/*text color*/
+
 /* images and video */
 img, video {
     margin-bottom: calc(var(--spacing)*.5);
@@ -185,7 +192,7 @@ img, video {
 }
 
 #section-header {
-    border-bottom: var(--border-width) solid var(--color-primary);
+    /*border-bottom: var(--border-width) solid var(--color-primary);*/
     margin-bottom: calc(var(--spacing)/2);
 }
 

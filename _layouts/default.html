@@ -17,7 +17,7 @@
     <div id="site-container">
 
         <div id="nav-container" class="container">
-            <div id="title" class="center-content">
+            <div id="title" class="left-major">
                 <!--<img id="logo" src="images/intgswd-logo-type.png"></img>-->
                 <h1>I need to get some work done</h1>
             </div>
@@ -45,7 +45,7 @@
                         {% for post in site.posts %}
                         <li>
                             {% assign post_url = post.url | downcase | prepend: "/" %}
-                            <a class="post-link" href="{{ post.url }}" class="{% if post_url == page.url %}active{% endif %}">
+                            <a class="post-link" href="{{ post.url }}" class="{% if page.url == post_url %}active{% endif %}">
                                 {{ post.date | date: "%-m/%-d/%Y" }} {{ post.title }}
                             </a>
                         </li>
