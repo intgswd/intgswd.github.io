@@ -44,12 +44,14 @@
                     <ul>
                         {% for post in site.posts %}
                         <li>
-                            {% assign post_identifier = post.date | post.slug %}
-                            {% assign page_identifier = page.date | page.slug %}
+                            {% assign post_identifier = post.date | append: post.slug %}
+                            {% assign page_identifier = page.date | append: page.slug %}
                             <a class="post-link" href="{{ post.url }}" class="{% if post_identifier == page_identifier %}active{% endif %}">
                                 {{ post.date | date: "%-m/%-d/%Y" }} {{ post.title }}
                                 <br />
                                 {{ post_identifier }}
+                                <br />
+                                {{ page_identifier }}
                             </a>
                         </li>
                         {% endfor %}
