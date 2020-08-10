@@ -159,7 +159,7 @@ h3 {
 /*text*/
 
 /*text color*/
-h1, .border, h3 {
+h1, h3 {
     color: var(--color-tertiary);
 }
 /*text color*/
@@ -192,7 +192,7 @@ img, video {
 }
 
 #section-header {
-    /*border-bottom: var(--border-width) solid var(--color-primary);*/
+    border-bottom: var(--border-width) solid var(--color-tertiary);
     margin-bottom: calc(var(--spacing)/2);
 }
 

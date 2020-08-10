@@ -48,10 +48,6 @@
                             {% assign page_identifier = page.date | append: page.slug %}
                             <a href="{{ post.url }}" class="{% if post_identifier == page_identifier %}active{% endif %}">
                                 {{ post.date | date: "%-m/%-d/%Y" }} {{ post.title }}
-                                <br />
-                                {{ post_identifier }}
-                                <br />
-                                {{ page_identifier }}
                             </a>
                         </li>
                         {% endfor %}
