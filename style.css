@@ -178,6 +178,12 @@ img, video {
     width: 100%;
 }
 
+/* horizontal rule */
+hr {
+    border: none;
+    margin-bottom: calc(var(--spacing)*2);
+}
+
 #logo {
     position: relative;
     height: var(--h1-size);
