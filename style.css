@@ -181,7 +181,7 @@ img, video {
 /* horizontal rule */
 hr {
     border: none;
-    margin-bottom: calc(var(--spacing)*2);
+    margin-bottom: calc(var(--spacing)*1);
 }
 
 #logo {
@@ -224,7 +224,7 @@ if trying to color the logo over white
 
 #section-header {
     border-bottom: var(--border-width) solid var(--color-tertiary);
-    margin-bottom: calc(var(--spacing)/2);
+    margin-bottom: calc(var(--spacing)*1);
 }
 
 .container 
