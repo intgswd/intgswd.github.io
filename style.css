@@ -174,7 +174,7 @@ h1, h3, #description li, #description a {
 
 /* images and video */
 img, video {
-    margin-bottom: calc(var(--spacing)*.5);
+    margin-bottom: calc(var(--body-size)*1);
     width: 100%;
 }
 
