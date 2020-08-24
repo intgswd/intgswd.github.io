@@ -16,8 +16,8 @@ C: make it fun... At least for myself. Forget all you. I just want to drink a pi
 <video src="video/2020-4-17-coffee-grabbing.MP4" autoplay loop muted></video>
 Most of this progress ends up on my [Twitter](http://twitter.com/pedestriantac). This was back in February when I was re-writing the object manipulation and interaction systems.
 
-<video src="2020-6-12-productivity-system" autoplay loop muted></video>
-I re-hooked up the productivity system after re-writing plenty of internal scripts in June.
+<video src="2020-6-12-productivity-system.MP4" autoplay loop muted></video>
+In June I hooked up the productivity system again after re-writing plenty of internal scripts.
 
 <video src="video/2020-8-7-tilemap-glitches.MP4" autoplay loop muted></video>
 Now it's August and I still run into plenty of entertaining square one issues... but things are getting more stable.
