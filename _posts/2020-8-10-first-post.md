@@ -1,4 +1,4 @@
-Let's recap!
+# Let's recap!
 
 Roughly nine months ago I started building a Tomogatchi-like simulator that would require you to drink coffee, work, and take breaks at certain intervals in order to maintain an internal "productivity" level. This productivity level would determine your paycheck every time you worked. The early simulator took the form of an ugly series of moving bars with buttons.
 <img src="images/2019-11-21-early-prototype.jpg">

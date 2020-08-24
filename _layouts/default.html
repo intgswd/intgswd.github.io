@@ -55,9 +55,8 @@
             <div id="page" class="left-major">
                 <div class="box">
                     <div id="section-header">
-                        <h3>{{ page.date | date: "%-m/%-d/%Y" }}</h3>
+                        <h3>{{ post.date | date: "%-m/%-d/%Y" }} {{ post.title }}/h3>
                     </div>
-                    <h2>{{ page.title }}</h2>
                     {{ page.content }}
                     </p>
                 </div>
