@@ -85,7 +85,7 @@ src: url("fonts/Nomad2Mono.ttf");
 
 :root {
     --color-primary: black;
-    --color-secondary: white;
+    --color-secondary: #d1dbdf;
     --color-tertiary: #9ed5ef;
     --color-background: #d1dbdf;
   /*  --font: "PT-F5 Regular", "Helvetica Neue Medium", Helvetica, Arial, sans-serif; */
