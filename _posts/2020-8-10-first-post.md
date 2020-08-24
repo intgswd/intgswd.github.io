@@ -38,7 +38,7 @@ In June I hooked up the productivity system again after re-writing plenty of int
 ---
 
 <video src="video/2020-8-7-tilemap-glitches.MP4" autoplay loop muted></video>
-Now it's August and I still run into plenty of entertaining square one issues... but things are getting more stable.
+Now it's August and I still run into plenty of entertaining square-one issues... but things are getting more stable.
 
 ---
 

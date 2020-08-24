@@ -85,11 +85,8 @@ src: url("fonts/Nomad2Mono.ttf");
 
 :root {
     --color-primary: black;
-    --color-secondary: #d1dbdf;
-    --color-tertiary: black;
-    /*
+    --color-secondary: #ffffff;
     --color-tertiary: #9ed5ef;
-    */
     --color-background: #d1dbdf;
   /*  --font: "PT-F5 Regular", "Helvetica Neue Medium", Helvetica, Arial, sans-serif; */
     --font: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -195,8 +192,6 @@ hr {
     image-rendering: crisp-edges;
 }
 
-/*
-if trying to color the logo over white
 #logo-overlay {
     background-color: var(--color-tertiary);
     position: absolute;
@@ -207,7 +202,7 @@ if trying to color the logo over white
     overflow:hidden;
     mix-blend-mode: screen;
 }
-*/
+
 
 /* images and video */
 
