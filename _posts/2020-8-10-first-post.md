@@ -18,9 +18,12 @@ Eventually both systems were bound together and I ended up with a very (VERY) cr
 ---
 
 This quickly revealed to me that players had no idea what they were doing or what they "needed" to do. Since then I have been dedicating nearly all of my time to
-A: learn, 
-B: build a world and a system that will actually make sense, and
-C: make it fun... At least for myself. Forget all you. I just want to drink a pixellated single-origin espresso.
+
+A. learn, 
+
+B. build a world and a system that will actually make sense, and
+
+C. make it fun... At least for myself. Forget all you. I just want to drink a pixellated single-origin espresso.
 
 ---
 
