@@ -92,14 +92,14 @@ src: url("fonts/Nomad2Mono.ttf");
     --font: "Helvetica Neue", Helvetica, Arial, sans-serif;
     --max-width: 960px;
     --body-size: 16px;
-    --line-height-multiplier: 1.2;
+    --line-height-multiplier: 1.4;
     /* site title */
     --h1-size: calc(var(--body-size)*7);
     --h2-size: calc(var(--body-size)*2);
     --h3-size: calc(var(--body-size)*1);
     --spacing: calc(var(--body-size)*3);
-    --border-width: 1px;
-    --letter-spacing: .03em;
+    --border-width: 1.5px;
+    --letter-spacing: .05em;
 }
 
 /*main css*/
@@ -115,7 +115,7 @@ html, body, p, a, h1, h2, h3, ul, li {
     margin-bottom: calc(var(--body-size)*1);
     text-decoration: none;
     letter-spacing: var(--letter-spacing);
-    font-weight: 300;
+    font-weight: 400;
 }
 
 a {
