@@ -86,8 +86,8 @@ src: url("fonts/Nomad2Mono.ttf");
 :root {
     --color-primary: black;
     --color-secondary: #ffffff;
-    --color-tertiary: #9ed5ef;
-    --color-background: #d1dbdf;
+    --color-tertiary: #81cbe3;
+    --color-background: #eff2f2;
   /*  --font: "PT-F5 Regular", "Helvetica Neue Medium", Helvetica, Arial, sans-serif; */
     --font: "Helvetica Neue", Helvetica, Arial, sans-serif;
     --max-width: 960px;
@@ -106,7 +106,7 @@ src: url("fonts/Nomad2Mono.ttf");
 
 /*text*/
 html {
-    background-color: var(--color-secondary);
+    background-color: var(--color-background);
 }
 
 html, body, p, a, h1, h2, h3, ul, li {
@@ -191,7 +191,7 @@ hr {
     image-rendering: -moz-crisp-edges;
     image-rendering: crisp-edges;
 }
-
+/*
 #logo-overlay {
     background-color: var(--color-tertiary);
     position: absolute;
@@ -202,7 +202,7 @@ hr {
     overflow:hidden;
     mix-blend-mode: screen;
 }
-
+*/
 
 /* images and video */
 
@@ -218,7 +218,7 @@ hr {
 }
 
 #section-header {
-    border-bottom: var(--border-width) solid var(--color-tertiary);
+    /*border-bottom: var(--border-width) solid var(--color-tertiary);*/
     margin-bottom: calc(var(--spacing)*1);
 }
 
@@ -233,6 +233,7 @@ hr {
 .box {
     background-color: var(--color-secondary);
     margin-bottom: var(--spacing);
+    padding: calc(var(--spacing)/2);
 }
 
 .left-minor, .left-major, .right-minor, .right-major, .center-content, .border {
