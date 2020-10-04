@@ -1,5 +1,5 @@
 September was one of those months consumed by a slew of little things that didn't seem that important.. but were.
-Here are a couple achievements that stood out.
+A couple things that stood out were:
 
 ---
 
