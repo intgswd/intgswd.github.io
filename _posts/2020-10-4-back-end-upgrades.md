@@ -1,5 +1,5 @@
-September was one of those months consumed by a slew of back-end upgrades.
-Here's a quick recap of what happened.
+September was one of those months consumed by a slew of little things that didn't seem that important.. but were.
+Here are a couple achievements that stood out.
 
 ---
 
@@ -12,7 +12,7 @@ Originally my object collision system relied on the idea that every object occup
 
 ---
 
-## Game-object-based checkpoint system for NPCs
+## Checkpoint system for NPCs!
 This one was a nice refresh. Each checkpoint can contain a script that is automatically excecuted when the NPC reaches the checkpoint. The player can also interrupt the walking behaviour.
 
 ---
