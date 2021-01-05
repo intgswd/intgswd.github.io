@@ -193,7 +193,7 @@ hr {
     image-rendering: crisp-edges;
 }
 
-#logo-overlay {
+/* #logo-overlay {
     background-color: var(--color-tertiary);
     position: absolute;
     top: 0;
@@ -202,7 +202,7 @@ hr {
     right: 0;
     overflow:hidden;
     mix-blend-mode: screen;
-}
+} */
 
 /* images and video */
 
