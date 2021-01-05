@@ -2,4 +2,32 @@
 layout: default
 ---
 
-{{ post.content }}
+<div id="page" class="left-major">
+    <div class="box">
+        <div id="section-header">
+            <h3>{{ page.date | date: "%-m/%-d/%Y" }} {{ page.title }}</h3>
+        </div>
+            {{ post.content }}
+        </p>
+    </div>
+</div>
+
+<div id="archive" class="right-minor">
+    <div class="box">
+        <div id="section-header">
+            <h3>Archive</h3>
+        </div>
+        <ul>
+            {% for post in site.posts %}
+            <li>
+                {% assign post_identifier = post.date | append: post.slug %}
+                {% assign page_identifier = page.date | append: page.slug %}
+                <a href="{% if post_identifier != page_identifier %}{{ post.url }}{% endif %}"
+                    class="{% if post_identifier == page_identifier %}active{% endif %}">
+                    {{ post.date | date: "%-m/%-d/%Y" }} {{ post.title }}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
