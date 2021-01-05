@@ -192,7 +192,7 @@ hr {
     image-rendering: -moz-crisp-edges;
     image-rendering: crisp-edges;
 }
-/*
+
 #logo-overlay {
     background-color: var(--color-tertiary);
     position: absolute;
@@ -203,7 +203,6 @@ hr {
     overflow:hidden;
     mix-blend-mode: screen;
 }
-*/
 
 /* images and video */
 
