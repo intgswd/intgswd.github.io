@@ -182,6 +182,11 @@ hr {
     margin-bottom: calc(var(--spacing)*1);
 }
 
+#logo-inside {
+    width:100%;
+    height:100%;
+}
+
 #logo {
     position: relative;
     height: var(--h1-size);
