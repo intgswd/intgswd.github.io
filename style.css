@@ -99,7 +99,7 @@ src: url("fonts/Nomad2Mono.ttf");
     --h3-size: calc(var(--body-size)*1);
     --spacing: calc(var(--body-size)*3);
     --border-width: 1.5px;
-    --letter-spacing: .05em;
+    --letter-spacing: 0em;
 }
 
 /*main css*/
