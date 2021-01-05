@@ -249,6 +249,10 @@ hr {
     width: calc(25% - (var(--spacing)/2));
 }
 
+.center-content {
+    width: calc(100% - (var(--spacing)/2));
+}
+
 /*divs*/
 
 
