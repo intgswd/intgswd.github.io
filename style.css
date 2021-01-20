@@ -95,8 +95,8 @@ src: url("fonts/Nomad2Mono.ttf");
     --body-size: 16px;
     --line-height-multiplier: 1.4;
     /* site title */
-    --h1-size: calc(var(--body-size)*4);
-    --h2-size: calc(var(--body-size)*1.4);
+    --h1-size: calc(var(--body-size)*6);
+    --h2-size: calc(var(--body-size)*1.6);
     --h3-size: calc(var(--body-size)*1);
     --spacing: calc(var(--body-size)*3);
     --border-width: 1.5px;
@@ -190,7 +190,7 @@ hr {
 #logo {
     position: relative;
     height: var(--h1-size);
-    background-image: url("images/intgswd-logo-type.png");
+    background-image: url("favicon-16x16.png");
     background-repeat: no-repeat;
     background-size: auto 100%;
     image-rendering: pixelated;
@@ -279,7 +279,7 @@ hr {
     }
     :root {
         --body-size: 14px;
-        --h1-size: calc(var(--body-size)*4)
+        --h1-size: calc(var(--body-size)*6)
         }
     
 }
