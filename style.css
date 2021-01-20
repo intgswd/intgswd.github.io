@@ -96,8 +96,8 @@ src: url("fonts/Nomad2Mono.ttf");
     --line-height-multiplier: 1.4;
     /* site title */
     --h1-size: calc(var(--body-size)*6);
-    --h2-size: calc(var(--body-size)*1.6);
-    --h3-size: calc(var(--body-size)*1);
+    --h2-size: calc(var(--body-size)*1.5);
+    --h3-size: calc(var(--body-size)*2.5);
     --spacing: calc(var(--body-size)*3);
     --border-width: 1.5px;
     --letter-spacing: 0em;
