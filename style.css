@@ -169,9 +169,9 @@ h3 {
 /*text*/
 
 /*text color*/
-h1, h3, #description li, #description a {
+/* h1, h3, #description li, #description a {
     color: var(--color-tertiary);
-}
+} */
 /*text color*/
 
 /* images and video */
