@@ -96,8 +96,8 @@ src: url("fonts/Nomad2Mono.ttf");
     --line-height-multiplier: 1.4;
     /* site title */
     --h1-size: calc(var(--body-size)*6);
-    --h2-size: calc(var(--body-size)*2);
-    --h3-size: calc(var(--body-size)*0.6);
+    --h2-size: calc(var(--body-size)*1);
+    --h3-size: calc(var(--body-size)*1.4);
     --spacing: calc(var(--body-size)*3);
     --border-width: 1.5px;
     --letter-spacing: 0em;
@@ -150,6 +150,7 @@ h1 {
 
 h2 {
     font-size: var(--h2-size);
+    font-weight: bold;
     line-height: calc(var(--h2-size)*var(--line-height-multiplier));
 }
 
