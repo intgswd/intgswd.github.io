@@ -107,7 +107,7 @@ src: url("fonts/Nomad2Mono.ttf");
 
 /*text*/
 html {
-    background-color: var(--color-secondary);
+    background-color: var(--color-background);
 }
 
 html, body, p, a, h1, h2, h3, ul, li {
@@ -238,7 +238,7 @@ hr {
 .box {
     background-color: var(--color-secondary);
     margin-bottom: var(--spacing);
-    /* padding: calc(var(--spacing)/2); */
+    padding: calc(var(--spacing)/2);
 }
 
 .left-minor, .left-major, .right-minor, .right-major, .center-content, .border {
