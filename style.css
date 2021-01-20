@@ -107,7 +107,7 @@ src: url("fonts/Nomad2Mono.ttf");
 
 /*text*/
 html {
-    background-color: var(--color-background);
+    background-color: var(--color-secondary);
 }
 
 html, body, p, a, h1, h2, h3, ul, li {
