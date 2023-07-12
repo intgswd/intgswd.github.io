@@ -1,19 +1,19 @@
 # this will show up on the tab for the site
-meta-title: "PT-DLC5"
+meta-title: "The Grind Game"
 # this shows up below the title in a google search result
-meta-description: This is an example of the description
+meta-description: An upcoming game about working really hard by Pedestrian Tactics
 # whether to show the title on the front page
-show-title: true
+show-title: false
 # this shows up on the main page
-title: "\uE001PT-DLC5-6"
+title: "Hello I'm Dan"
 # this is a convenient shortcut to hide the intro text which can be changed in user-intro-text.md
-show-intro-text: false
+show-intro-text: true
 # whether to show the background image or not
 show-background: false
 # optional. will fill the screen. place the image in the user-images folder and add the name of it here
 background-image: sky.png
 # this is just a convenient switch to hide all the images without having to delete the text below
-show-images: false
+show-images: true
 # whether to put the images above or below the intro text
 images-above-intro-text: true
 # if you would like to show images on the main page put them in the user-images folder and then include them here
@@ -21,10 +21,7 @@ images-above-intro-text: true
 images:
 
 - alt: Logo
-  url: pt-handwritten-black.png
-
-- alt: Bio photo
-  url: pt-bio-photo.png
+  url: the-grind-logo.png
 
 # in case you want to hide the links for some reason
 show-links: true
@@ -34,20 +31,13 @@ vertical-links: false
 # adding the parameter new-tab and setting it to true will open the link in a new browser tab
 links:
 
-- title: Spotify
-  url: https://open.spotify.com/artist/6TFOalvhHRXh8JmQTVSoyY?si=by2Uv4_pRSGLL92wMk5K3g
-  new-tab: true
-
 - title: Twitter
-  url: http://twitter.com/pedestriantac
+  url: http://twitter.com/thegrindgame
   new-tab: true
   
 - title: Instagram
-  url: http://instagram.com/pedestriantactics
+  url: http://instagram.com/thecoffeeshopgame
   new-tab: true
   
 - title: Email
-  url: mailto:hi@pedestriantactics.com
-
-- title: Custom page
-  url: user-custom-page
+  url: mailto:hi@thegrindgame.com

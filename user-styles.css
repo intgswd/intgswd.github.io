@@ -5,22 +5,22 @@
 
 /* this is an example of importing a font placed in the user-fonts folder */
 @font-face {
-    font-family: "Scaffolding";
-    src: url("user-fonts/Scaffolding-Regular.woff2") format("woff2"),
-        url("user-fonts/Scaffolding-Regular.woff") format("woff");
+    font-family: "Grind Font";
+    src: url("user-fonts/pt-f4-2-100-webfont.woff2") format("woff2"),
+        url("user-fonts/pt-f4-2-100-webfont.woff") format("woff");
 }
 
 :root {
     /* color of the whole page */
-    --color-background: #ffff00;
+    --color-background: #80d6ff;
     /* color of text elements */
-    --color-foreground: black;
+    --color-foreground: #697391;
 }
 
 /* these are settings for all text */
 /* replace "Scaffolding" with the name of the font you want to use */
 body {
-    font-family: 'Scaffolding', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Grind Font', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 /* this is the title text */
@@ -41,7 +41,8 @@ p {
 
 /* this is the style for the intro text */
 #intro-text p {
-    font-size: 32pt;
+    font-size: 18pt;
+    line-height: 1.5em;
 }
 
 /* this will show up on custom pages */
@@ -57,7 +58,7 @@ p {
 /* this will cap the width of the title, images, and description */
 /* you can use a percentage of the whole page or a pixel value */
 #title-container {
-    width: 100%;
+    width: 480px;
 }
 
 /* image size for custom pages */
