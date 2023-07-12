@@ -1,0 +1,77 @@
+<head>
+<!-- This website was created using The Template (PT-DLC5) by Pedestrian Tactics -->
+    <title>{%if page.title %}{{page.title}} - {% endif %}{{site.data.user-config.meta-title}}</title>
+    <meta title=”description” content={{site.data.user-config.description}}>
+    <link rel="icon" type="image/png" href="/user-favicon.png">
+</head>
+
+<body>
+    {% if site.data.user-config.show-background == true %}
+    <div id="bg"></div>
+    {% endif %}
+    <div id="container">
+        {{content}}
+    </div>
+</body>
+
+<style>
+    @import "/reset.css";
+    @import "/user-styles.css";
+
+    :root {
+        --margin: 3rem;
+        background-color: var(--color-background);
+        color: var(--color-foreground);
+        text-align: center;
+    }
+
+    body {
+        font-size: 12px;
+    }
+
+    #bg {
+        position: fixed;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-image: url("../user-images/{{site.data.user-config.background-image}}");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    p {
+        margin-bottom: .8em;
+    }
+
+    a,
+    a:hover,
+    a:visited,
+    a:active,
+    a:focus {
+        color: var(--color-foreground);
+    }
+
+    img {
+        width: 100%;
+        /* this isn't the margin so it doesn't collapse when the device gets smaller */
+        margin-bottom: 3rem;
+    }
+
+    /* align everything inside the container div in a grid vertically and horizontally centered */
+    #container {
+        margin: var(--margin);
+        display: grid;
+        place-items: center;
+        height: calc(100vh - calc(var(--margin) * 2));
+        width: calc(100vw - calc(var(--margin) * 2));
+    }
+
+    @media screen and (max-width: 900px) {
+        :root {
+            --margin: .3rem;
+        }
+    }
+</style>

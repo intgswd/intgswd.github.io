@@ -1,0 +1,173 @@
+<head>
+<!-- This website was created using The Template (PT-DLC5) by Pedestrian Tactics -->
+    <title>PT-DLC5</title>
+    <meta title=”description” content=>
+    <link rel="icon" type="image/png" href="/user-favicon.png">
+</head>
+
+<body>
+    
+    <div id="container">
+        <div id="index-container">
+    <div id="title-container">
+        
+        <h1 id="title-text">PT-DLC5-5</h1>
+        
+
+        <!-- images above intro text -->
+        
+
+        
+        
+
+        <!-- images below intro text -->
+        
+    </div>
+    
+    
+    <div id="menu-links">
+        
+        <a class="menu-link" href=https://open.spotify.com/artist/6TFOalvhHRXh8JmQTVSoyY?si=by2Uv4_pRSGLL92wMk5K3g target="_blank">Spotify</a>
+        
+        <a class="menu-link" href=http://twitter.com/pedestriantac target="_blank">Twitter</a>
+        
+        <a class="menu-link" href=http://instagram.com/pedestriantactics target="_blank">Instagram</a>
+        
+        <a class="menu-link" href=mailto:hi@pedestriantactics.com >Email</a>
+        
+        <a class="menu-link" href=user-custom-page >Custom page</a>
+        
+    </div>
+    
+    
+</div>
+
+<style>
+    /* make the contents arrange themselves horizontally with 2rem space in between */
+    #menu-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #menu-links-vertical {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #menu-links a {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    #menu-links-vertical a {
+        margin-bottom: 1em;
+    }
+
+    #index-container {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: var(--margin);
+    }
+
+    #title-container {
+        margin-bottom: 1rem;
+    }
+
+    #title-text {
+        margin-bottom: .3em;
+    }
+
+    #menu-links a,
+    #menu-links a:visited,
+    #menu-links a:active,
+    #menu-links a:focus,
+    #menu-links a:hover,
+    #menu-links-vertical a,
+    #menu-links-vertical a:visited,
+    #menu-links-vertical a:active,
+    #menu-links-vertical a:focus,
+    #menu-links-vertical a:hover {
+        text-decoration: none;
+    }
+
+    /* add a media query at 600px that stacks the links in the links div vertically */
+    @media (max-width: 900px) {
+        #menu-links {
+            flex-direction: column;
+        }
+
+        #menu-links a {
+            margin-bottom: 1em;
+        }
+    }
+</style>
+    </div>
+</body>
+
+<style>
+    @import "/reset.css";
+    @import "/user-styles.css";
+
+    :root {
+        --margin: 3rem;
+        background-color: var(--color-background);
+        color: var(--color-foreground);
+        text-align: center;
+    }
+
+    body {
+        font-size: 12px;
+    }
+
+    #bg {
+        position: fixed;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-image: url("../user-images/sky.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    p {
+        margin-bottom: .8em;
+    }
+
+    a,
+    a:hover,
+    a:visited,
+    a:active,
+    a:focus {
+        color: var(--color-foreground);
+    }
+
+    img {
+        width: 100%;
+        /* this isn't the margin so it doesn't collapse when the device gets smaller */
+        margin-bottom: 3rem;
+    }
+
+    /* align everything inside the container div in a grid vertically and horizontally centered */
+    #container {
+        margin: var(--margin);
+        display: grid;
+        place-items: center;
+        height: calc(100vh - calc(var(--margin) * 2));
+        width: calc(100vw - calc(var(--margin) * 2));
+    }
+
+    @media screen and (max-width: 900px) {
+        :root {
+            --margin: .3rem;
+        }
+    }
+</style>

@@ -1,0 +1,113 @@
+<head>
+<!-- This website was created using The Template (PT-DLC5) by Pedestrian Tactics -->
+    <title>404 - PT-DLC5</title>
+    <meta title=”description” content=>
+    <link rel="icon" type="image/png" href="/user-favicon.png">
+</head>
+
+<body>
+    
+    <div id="container">
+        <div id="custom-page-container" class="custom-page-text">
+    <p>404 yo!</p>
+
+<p>There’s nothing here</p>
+
+    <div id="back-button" class="custom-page-text">
+        <a href="../"></a>
+    </div>
+</div>
+<style>
+    /* this is the width of the content in the custom page container */
+    #custom-page-container {
+        width: 80%;
+    }
+
+    /* make the back button fixed at the middle left with a width of 4em */
+    #back-button {
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        display: grid;
+        /* align-items: center; */
+        width: 4em;
+    }
+
+    #back-button a {
+        text-decoration: none;
+    }
+
+    /* make the back button on the bottom and full width on mobile */
+    @media screen and (max-width: 600px) {
+        #back-button {
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    }
+</style>
+    </div>
+</body>
+
+<style>
+    @import "/reset.css";
+    @import "/user-styles.css";
+
+    :root {
+        --margin: 3rem;
+        background-color: var(--color-background);
+        color: var(--color-foreground);
+        text-align: center;
+    }
+
+    body {
+        font-size: 12px;
+    }
+
+    #bg {
+        position: fixed;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-image: url("../user-images/sky.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    p {
+        margin-bottom: .8em;
+    }
+
+    a,
+    a:hover,
+    a:visited,
+    a:active,
+    a:focus {
+        color: var(--color-foreground);
+    }
+
+    img {
+        width: 100%;
+        /* this isn't the margin so it doesn't collapse when the device gets smaller */
+        margin-bottom: 3rem;
+    }
+
+    /* align everything inside the container div in a grid vertically and horizontally centered */
+    #container {
+        margin: var(--margin);
+        display: grid;
+        place-items: center;
+        height: calc(100vh - calc(var(--margin) * 2));
+        width: calc(100vw - calc(var(--margin) * 2));
+    }
+
+    @media screen and (max-width: 900px) {
+        :root {
+            --margin: .3rem;
+        }
+    }
+</style>

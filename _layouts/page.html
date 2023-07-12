@@ -1,0 +1,40 @@
+---
+layout: base
+---
+
+<div id="custom-page-container" class="custom-page-text">
+    {{content}}
+    <div id="back-button" class="custom-page-text">
+        <a href="../"></a>
+    </div>
+</div>
+<style>
+    /* this is the width of the content in the custom page container */
+    #custom-page-container {
+        width: 80%;
+    }
+
+    /* make the back button fixed at the middle left with a width of 4em */
+    #back-button {
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        display: grid;
+        /* align-items: center; */
+        width: 4em;
+    }
+
+    #back-button a {
+        text-decoration: none;
+    }
+
+    /* make the back button on the bottom and full width on mobile */
+    @media screen and (max-width: 600px) {
+        #back-button {
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    }
+</style>

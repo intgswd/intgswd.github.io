@@ -1,0 +1,113 @@
+---
+layout: base
+---
+
+<div id="index-container">
+    <div id="title-container">
+        {% if site.data.user-config.show-title == true %}
+        <h1 id="title-text">{{site.data.user-config.title}}</h1>
+        {% endif %}
+
+        <!-- images above intro text -->
+        {% if site.data.user-config.show-images == true and site.data.user-config.images-above-intro-text == true %}
+        {% for image in site.data.user-config.images %}
+        <img class="title-image" src="/user-images/{{image.url}}" alt="{{image.alt}}">
+        {% endfor %}
+        {% endif %}
+
+        {% capture my_include %}{% include_relative user-intro-text.md %}{% endcapture %}
+        {% if my_include != "" and site.data.user-config.show-intro-text == true %}
+        <div id="intro-text">
+            {{ my_include | markdownify }}
+        </div>
+        {% endif %}
+
+        <!-- images below intro text -->
+        {% if site.data.user-config.show-images == true and site.data.user-config.images-above-intro-text == false %}
+        {% for image in site.data.user-config.images %}
+        <img class="title-image" src="/user-images/{{image.url}}" alt="{{image.alt}}">
+        {% endfor %}
+        {% endif %}
+    </div>
+    {% if site.data.user-config.show-links == true %}
+    {% if site.data.user-config.vertical-links == false %}
+    <div id="menu-links">
+        {% for item in site.data.user-config.links %}
+        <a class="menu-link" href={{item.url}} {% if item.new-tab %}target="_blank"{% endif %}>{{item.title}}</a>
+        {% endfor %}
+    </div>
+    {% else %}
+    <div id="menu-links-vertical">
+        {% for item in site.data.user-config.links %}
+        <a class="menu-link" href={{item.url}} {% if item.new-tab %}target="_blank"{% endif %}>{{item.title}}</a>
+        {% endfor %}
+    </div>
+    {% endif %}
+    {% endif %}
+</div>
+
+<style>
+    /* make the contents arrange themselves horizontally with 2rem space in between */
+    #menu-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #menu-links-vertical {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #menu-links a {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    #menu-links-vertical a {
+        margin-bottom: 1em;
+    }
+
+    #index-container {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: var(--margin);
+    }
+
+    #title-container {
+        margin-bottom: 1rem;
+    }
+
+    #title-text {
+        margin-bottom: .3em;
+    }
+
+    #menu-links a,
+    #menu-links a:visited,
+    #menu-links a:active,
+    #menu-links a:focus,
+    #menu-links a:hover,
+    #menu-links-vertical a,
+    #menu-links-vertical a:visited,
+    #menu-links-vertical a:active,
+    #menu-links-vertical a:focus,
+    #menu-links-vertical a:hover {
+        text-decoration: none;
+    }
+
+    /* add a media query at 600px that stacks the links in the links div vertically */
+    @media (max-width: 900px) {
+        #menu-links {
+            flex-direction: column;
+        }
+
+        #menu-links a {
+            margin-bottom: 1em;
+        }
+    }
+</style>

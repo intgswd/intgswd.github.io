@@ -1,0 +1,84 @@
+/* this is an example of importing a google font */
+/* Locate the font you want and put the name where "Permanent+Marker" is (use + if there's a space in the name) */
+/* When referencing it below, type it like this 'Permanent Marker' */
+@import "https://fonts.googleapis.com/css?family=Permanent+Marker";
+
+/* this is an example of importing a font placed in the user-fonts folder */
+@font-face {
+    font-family: "Scaffolding";
+    src: url("user-fonts/Scaffolding-Regular.woff2") format("woff2"),
+        url("user-fonts/Scaffolding-Regular.woff") format("woff");
+}
+
+:root {
+    /* color of the whole page */
+    --color-background: #ffff00;
+    /* color of text elements */
+    --color-foreground: black;
+}
+
+/* these are settings for all text */
+/* replace "Scaffolding" with the name of the font you want to use */
+body {
+    font-family: 'Scaffolding', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* this is the title text */
+/* you can copy the font-family line from above and paste it here to use a different font for the title */
+#title-text {
+    /* this is the title size and will change based on the browser's width */
+    /* use 10vw for a medium sized name like John Smith */
+    /* use 8vw for a longer name like Pedestrian Tactics */
+    /* use 20vw for a shorter name like Klippee */
+    font-size: 13vw;
+}
+
+/* The alignment for all text and images */
+/* you can use left, right, or center */
+p {
+    text-align: center;
+}
+
+/* this is the style for the intro text */
+#intro-text p {
+    font-size: 32pt;
+}
+
+/* this will show up on custom pages */
+.custom-page-text {
+    font-size: 32pt;
+}
+
+/* this is the style for the links */
+.menu-link {
+    font-size: 18pt;
+}
+
+/* this will cap the width of the title, images, and description */
+/* you can use a percentage of the whole page or a pixel value */
+#title-container {
+    width: 100%;
+}
+
+/* image size for custom pages */
+/* use % for a percentage of the total width or px for an actual pixel width */
+#custom-page-container img {
+    width: 30%;
+}
+
+/* in case you would like the alignment of the text on a custom page to be different */
+#custom-page-container p {
+    text-align: center;
+}
+
+/* the character used for the back button on custom pages */
+/* you can use any unicode character */
+#back-button a::before {
+    content: "<";
+}
+
+/* vertical position for the back button on the custom page */
+/* it can be top or center */
+#back-button {
+    align-items: center;
+}

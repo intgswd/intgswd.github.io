@@ -1,0 +1,53 @@
+# this will show up on the tab for the site
+meta-title: "PT-DLC5"
+# this shows up below the title in a google search result
+meta-description: This is an example of the description
+# whether to show the title on the front page
+show-title: true
+# this shows up on the main page
+title: "\uE001PT-DLC5-6"
+# this is a convenient shortcut to hide the intro text which can be changed in user-intro-text.md
+show-intro-text: false
+# whether to show the background image or not
+show-background: false
+# optional. will fill the screen. place the image in the user-images folder and add the name of it here
+background-image: sky.png
+# this is just a convenient switch to hide all the images without having to delete the text below
+show-images: false
+# whether to put the images above or below the intro text
+images-above-intro-text: true
+# if you would like to show images on the main page put them in the user-images folder and then include them here
+# the alt is what will show when you hover over the image with a cursor
+images:
+
+- alt: Logo
+  url: pt-handwritten-black.png
+
+- alt: Bio photo
+  url: pt-bio-photo.png
+
+# in case you want to hide the links for some reason
+show-links: true
+# the links are arranged horizontally except on mobile, this forces them to be vertical
+vertical-links: false
+# these will be on the main page, you can add or remove as many as you want
+# adding the parameter new-tab and setting it to true will open the link in a new browser tab
+links:
+
+- title: Spotify
+  url: https://open.spotify.com/artist/6TFOalvhHRXh8JmQTVSoyY?si=by2Uv4_pRSGLL92wMk5K3g
+  new-tab: true
+
+- title: Twitter
+  url: http://twitter.com/pedestriantac
+  new-tab: true
+  
+- title: Instagram
+  url: http://instagram.com/pedestriantactics
+  new-tab: true
+  
+- title: Email
+  url: mailto:hi@pedestriantactics.com
+
+- title: Custom page
+  url: user-custom-page
