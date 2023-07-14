@@ -41,18 +41,18 @@ p {
 
 /* this is the style for the intro text */
 #intro-text p {
-    font-size: 18pt;
+    font-size: 16pt;
     line-height: 1.5em;
 }
 
 /* this will show up on custom pages */
 .custom-page-text {
-    font-size: 32pt;
+    font-size: 16pt;
 }
 
 /* this is the style for the links */
 .menu-link {
-    font-size: 18pt;
+    font-size: 16pt;
 }
 
 /* this will cap the width of the title, images, and description */
@@ -64,7 +64,7 @@ p {
 /* image size for custom pages */
 /* use % for a percentage of the total width or px for an actual pixel width */
 #custom-page-container img {
-    width: 30%;
+    width: 100%;
 }
 
 /* in case you would like the alignment of the text on a custom page to be different */
